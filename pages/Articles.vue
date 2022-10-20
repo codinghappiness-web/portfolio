@@ -6,7 +6,7 @@
       <sub>
         <HeartIcon animate="beat" style="color: red;font-size: 24px;" />
       </sub>
-      on
+      on Medium &
       <em>
         <a
           href="https://dev.to/codinghappinessweb"
@@ -30,6 +30,119 @@
       <b-spinner variant="primary" v-if="showLoader"></b-spinner>
     </p>
     <b-row class="articles" v-if="blogs.length > 0">
+      <!-- ... -->
+      <div class="col-md-4">
+        <div>
+          <b-card-group deck>
+            <b-card
+              img-src="https://miro.medium.com/max/1400/1*dRfXf70--bxEdfFVbwG5Xw.jpeg"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <h4>Deploying a Text Classification Model in Python</h4>
+              <b-badge
+                class="animate__animated animate__fadeInUp"
+                style="margin: 2px;"
+                pill
+                :variant="
+                  tagVariants[Math.floor(Math.random() * tagVariants.length)]
+                "
+                >#{{ "Comet" }}</b-badge
+              >
+              <hr />
+              <b-card-text
+                >Using basic NLP principles to build a sentiment analysis model
+                and deploy it with Streamlit</b-card-text
+              >
+
+              <b-button
+                href="https://heartbeat.comet.ml/deploying-a-text-classification-model-in-python-e7cd25880364"
+                target="_blank"
+                rel="noopener"
+                variant="default"
+                >Read More..</b-button
+              >
+            </b-card>
+          </b-card-group>
+        </div>
+      </div>
+      <!-- ... -->
+      <div class="col-md-4">
+        <div>
+          <b-card-group deck>
+            <b-card
+              img-src="https://miro.medium.com/max/1400/1*1PfuguEzKf6a75LYb2SpFQ.jpeg"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <h4>Wine Quality Prediction</h4>
+              <b-badge
+                class="animate__animated animate__fadeInUp"
+                style="margin: 2px;"
+                pill
+                :variant="
+                  tagVariants[Math.floor(Math.random() * tagVariants.length)]
+                "
+                >#{{ "Comet" }}</b-badge
+              >
+              <hr />
+              <b-card-text
+                >Building a Random Forest Classifier on an imbalanced
+                dataset</b-card-text
+              >
+
+              <b-button
+                href="https://heartbeat.comet.ml/wine-quality-prediction-ac10498bec32"
+                target="_blank"
+                rel="noopener"
+                variant="default"
+                >Read More..</b-button
+              >
+            </b-card>
+          </b-card-group>
+        </div>
+      </div>
+      <!-- ... -->
+      <div class="col-md-4 d-md-none">
+        <div>
+          <b-card-group deck>
+            <b-card
+              img-src="https://miro.medium.com/max/1400/1*iU2UuYFubc1AgI86XcWQ2g.jpeg"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <h4>How I Built a Movie Recommendation System</h4>
+              <b-badge
+                class="animate__animated animate__fadeInUp"
+                style="margin: 2px;"
+                pill
+                :variant="
+                  tagVariants[Math.floor(Math.random() * tagVariants.length)]
+                "
+                >#{{ "Comet" }}</b-badge
+              >
+              <hr />
+              <b-card-text
+                >A movie recommendation system is an ML-based approach to
+                filtering or predicting the user’s movie
+                preferences...</b-card-text
+              >
+
+              <b-button
+                href="https://heartbeat.comet.ml/wine-quality-prediction-ac10498bec32"
+                target="_blank"
+                rel="noopener"
+                variant="default"
+                >Read More..</b-button
+              >
+            </b-card>
+          </b-card-group>
+        </div>
+      </div>
+      <!-- ... -->
       <div class="col-md-4" v-for="blog in blogs" :key="blog.id">
         <div>
           <b-card-group deck>
