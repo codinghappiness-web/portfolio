@@ -33,6 +33,14 @@ body {
   cursor: pointer;
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .avatat-img {
+    height: initial;
+  }
+  
+}
+
 .social-icons {
   margin-top: 25px;
 }
